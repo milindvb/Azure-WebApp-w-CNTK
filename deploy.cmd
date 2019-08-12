@@ -11,7 +11,7 @@ echo "USER MUST CHECK/SET THESE VARIABLES:"
 SET PYTHON_EXE=%SYSTEMDRIVE%\home\python353x64\python.exe
 SET NUMPY_WHEEL=https://azurewebappcntk.blob.core.windows.net/wheels/numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl
 SET SCIPY_WHEEL=https://azurewebappcntk.blob.core.windows.net/wheels/scipy-0.19.0-cp35-cp35m-win_amd64.whl
-SET CNTK_WHEEL=https://azurewebappcntk.blob.core.windows.net/cntkrc/cntk-2.0rc1-cp35-cp35m-win_amd64.whl
+SET CNTK_WHEEL=https://cntk.ai/PythonWheel/CPU-Only/cntk-2.7.post1-cp35-cp35m-win_amd64.whl
 SET CNTK_BIN=https://azurewebappcntk.blob.core.windows.net/cntkrc/cntk.zip
 echo "Installed python extension installed here:"
 echo %PYTHON_EXE%
