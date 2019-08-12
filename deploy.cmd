@@ -86,7 +86,7 @@ echo Detected requirements.txt.  You can skip Python specific steps with a .skip
 pushd "%DEPLOYMENT_TARGET%"
 :: 3. Setup python
 echo "Configuring pip"
-curl https://bootstrap.pypa.io/get-pip.py | %PYTHON_EXE%
+:: curl https://bootstrap.pypa.io/get-pip.py | %PYTHON_EXE%
 echo "Installing numpy"
 %PYTHON_EXE% -m pip install %NUMPY_WHEEL%
 echo "Installing scipy"
