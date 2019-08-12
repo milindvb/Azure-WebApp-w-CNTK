@@ -8,7 +8,7 @@
 :: VARIABLES
 echo "ATTENTION"
 echo "USER MUST CHECK/SET THESE VARIABLES:"
-SET PYTHON_EXE=%SYSTEMDRIVE%\home\python353x64\python.exe
+SET PYTHON_EXE=%SYSTEMDRIVE%\home\python354x64\python.exe
 SET NUMPY_WHEEL=https://azurewebappcntk.blob.core.windows.net/wheels/numpy-1.12.1+mkl-cp35-cp35m-win_amd64.whl
 SET SCIPY_WHEEL=https://azurewebappcntk.blob.core.windows.net/wheels/scipy-0.19.0-cp35-cp35m-win_amd64.whl
 SET CNTK_WHEEL=https://cntk.ai/PythonWheel/CPU-Only/cntk-2.7.post1-cp35-cp35m-win_amd64.whl
@@ -86,7 +86,7 @@ echo Detected requirements.txt.  You can skip Python specific steps with a .skip
 pushd "%DEPLOYMENT_TARGET%"
 :: 3. Setup python
 echo "Configuring pip"
-:: curl https://bootstrap.pypa.io/get-pip.py | %PYTHON_EXE%
+curl https://bootstrap.pypa.io/get-pip.py | %PYTHON_EXE%
 echo "Installing numpy"
 %PYTHON_EXE% -m pip install %NUMPY_WHEEL%
 echo "Installing scipy"
